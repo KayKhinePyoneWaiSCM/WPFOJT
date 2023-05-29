@@ -1,0 +1,17 @@
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\AppLibrary.deps.json
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\AppLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\AppLibrary.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\CommonLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\Model.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\CommonLibrary.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\bin\Release\net6.0-windows\Model.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.csproj.AssemblyReference.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.AssemblyInfoInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.AssemblyInfo.cs
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.csproj.CoreCompileInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.csproj.CopyComplete
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\refint\AppLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\AppLibrary.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\AppLibrary\obj\Release\net6.0-windows\ref\AppLibrary.dll

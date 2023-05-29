@@ -1,0 +1,101 @@
+﻿<ictrl:iWindow x:Class="BSNOJTApp.Main.Layout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BSNOJTApp.Main"
+        xmlns:dc ="clr-namespace:BSNOJTApp"
+        xmlns:ictrl="clr-namespace:BSNOJT.Front.AppControls;assembly=AppControls" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+       xmlns:viewmodels="clr-namespace:BSNOJTApp.Main" 
+       IsDisplayClosingMessage="False"
+        WindowState="Maximized"
+        mc:Ignorable="d"
+       d:DataContext="{d:DesignInstance Type=local:LayoutViewModel}"
+        Background="White"
+        Title="Layout" Height="600" Width="800">
+
+    <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Background="#577a6f"></Grid>
+            <materialDesign:ColorZone Mode="PrimaryMid" Grid.Column="1" Background="#577a6f" VerticalAlignment="Top">
+                <Grid >
+                    <materialDesign:PopupBox Foreground="White" Background="#577a6f" PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" Margin="20">
+                        <StackPanel Background="#577a6f">
+                            <Button x:Name="profileBtn" Content="Profile" Foreground="White" FontSize="14" Click="ProfileBtn_Clicked"/>
+                            <Button x:Name="resetPassBtn" Content="Change Password" Foreground="White" FontSize="14" Click="ChangePassBtn_Clicked"/>
+                            <Separator/>
+                            <Button x:Name="logoutBtn" Content="Logout" FontSize="14" Foreground="White" Click="PopupLogout_Clicked"/>
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                </Grid>
+            </materialDesign:ColorZone>
+            <Border Grid.Row="1" Background="#577a6f" CornerRadius="0 50 0 30">
+                <DockPanel>
+                    <Border Width="80" Height="80" Padding="3" DockPanel.Dock="Top" Background="White" CornerRadius="100" HorizontalAlignment="Center" Margin="0 -45 0 10">
+                        <Ellipse>
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/Image/LayoutImage.jpg" />
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Border>
+                    <TextBlock x:Name="txtUserName" Text="Welcome To"  Foreground="White" DockPanel.Dock="Top" TextAlignment="Center" FontSize="22" FontWeight="SemiBold" Height="29"></TextBlock>
+                    <Separator Margin="25" Background="White" DockPanel.Dock="Top" Height="5"></Separator>
+                    <StackPanel
+            Width="250"
+            Background="#577a6f"
+            DockPanel.Dock="top">
+                        <Menu Margin="0,0,0,0">
+                            <MenuItem Header="User" x:Name="menuUserCon" Template="{StaticResource Menu_SubMenu_Template}">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="AccountMultiple" Foreground="#FFF" Width="30" Height="30"></materialDesign:PackIcon>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="menuUserList" Header="User List" Template="{StaticResource Item_Template}" Click="UserList_Clicked">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="CheckboxBlankCircleOutline" Foreground="#FFF" Width="20" Height="20" Margin="5"></materialDesign:PackIcon>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="menuUserCreate" Header="Create User" Template="{StaticResource Item_Template}" Click="CreateUserBtn_Clicked" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="CheckboxBlankCircleOutline" Foreground="#FFF" Width="20" Height="20" Margin="5"></materialDesign:PackIcon>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+                            <MenuItem Header="Post" Template="{StaticResource Menu_SubMenu_Template}">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="Post" Foreground="#FFF" Width="30" Height="30"></materialDesign:PackIcon>
+                                </MenuItem.Icon>
+                                <MenuItem x:Name="menuPostList" Header="Post List" Template="{StaticResource Item_Template}" Click="PostListBtn_Clicked" >
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="CheckboxBlankCircleOutline" Foreground="#FFF" Width="20" Height="20" Margin="5"></materialDesign:PackIcon>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <MenuItem x:Name="menuPostCreate" Header="Create Post" Template="{StaticResource Item_Template}" Click="CreatePost_Clicked">
+                                    <MenuItem.Icon>
+                                        <materialDesign:PackIcon Kind="CheckboxBlankCircleOutline" Foreground="#FFF" Width="20" Height="20" Margin="5"></materialDesign:PackIcon>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+                            <Separator></Separator>
+                            <MenuItem x:Name="menuLogout" Foreground="White" Header="Log out" Template="{StaticResource Menu_Template}" Click="LogoutBtn_Clicked">
+                                <MenuItem.Icon>
+                                    <materialDesign:PackIcon Kind="Logout" Foreground="#FFF" Width="30" Height="30" Margin="3"></materialDesign:PackIcon>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </Menu>
+                    </StackPanel>
+                    <Separator  Background="#577a6f" DockPanel.Dock="Top"></Separator>
+                </DockPanel>
+            </Border>
+            <Frame x:Name="menuLayout" Grid.Column="2" Source="{Binding Path=PagePath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Border>
+</ictrl:iWindow>

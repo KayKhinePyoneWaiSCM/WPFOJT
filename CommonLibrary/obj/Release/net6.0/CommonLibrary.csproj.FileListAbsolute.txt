@@ -1,0 +1,12 @@
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\bin\Release\net6.0\CommonLibrary.deps.json
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\bin\Release\net6.0\CommonLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\bin\Release\net6.0\CommonLibrary.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.csproj.AssemblyReference.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.AssemblyInfoInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.AssemblyInfo.cs
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.csproj.CoreCompileInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\refint\CommonLibrary.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\CommonLibrary.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\CommonLibrary\obj\Release\net6.0\ref\CommonLibrary.dll

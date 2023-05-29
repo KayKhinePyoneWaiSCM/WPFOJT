@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\BSNOJTApp\\BSNOJTApp.csproj": {}
+  },
+  "projects": {
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\AppControls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\AppControls.csproj",
+        "projectName": "AppControls",
+        "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\AppControls.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj"
+              },
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj",
+        "projectName": "AppLibrary",
+        "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj"
+              },
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\BSNOJTApp\\BSNOJTApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\BSNOJTApp\\BSNOJTApp.csproj",
+        "projectName": "BSNOJTApp",
+        "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\BSNOJTApp\\BSNOJTApp.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\BSNOJTApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\AppControls.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppControls\\AppControls.csproj"
+              },
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\AppLibrary\\AppLibrary.csproj"
+              },
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj"
+              },
+              "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj": {
+                "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj",
+        "projectName": "CommonLibrary",
+        "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\CommonLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "D:\\SCM\\WPFBSN\\Update\\25-4-23\\BSNProject\\BSNOJT\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

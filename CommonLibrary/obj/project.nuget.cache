@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rPOAhqnBpjglDLNIaTzaChV8co5tWhnznH7vtY2a4TERmBP4v3j3kX8p2idCq8aWnp9vVC2kNdoJHdRMMRJPdw==",
+  "success": true,
+  "projectFilePath": "D:\\BSN\\AAA\\5-2-23\\17-5-23\\BSNProject\\BSNOJT\\CommonLibrary\\CommonLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KayKhinePyoneWai\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

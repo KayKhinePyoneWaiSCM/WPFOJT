@@ -1,0 +1,12 @@
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\bin\Release\net6.0\Model.deps.json
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\bin\Release\net6.0\Model.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\bin\Release\net6.0\Model.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.csproj.AssemblyReference.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.AssemblyInfoInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.AssemblyInfo.cs
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.csproj.CoreCompileInputs.cache
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\refint\Model.dll
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\Model.pdb
+D:\SCM\WPFBSN\BSNProject\BSNOJT\Model\obj\Release\net6.0\ref\Model.dll

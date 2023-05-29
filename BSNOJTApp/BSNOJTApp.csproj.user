@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Account\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Main\Layout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Post\Create.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Post\Edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Post\List.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\ChangePass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\Create.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\Edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\List.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Account\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Main\Layout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Post\Create.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Post\Edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Post\List.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User\ChangePass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User\Create.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User\Edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User\List.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="User\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
