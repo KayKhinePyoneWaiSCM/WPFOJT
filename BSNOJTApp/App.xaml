@@ -30,7 +30,6 @@
                 <Setter Property="TextAlignment" Value="Center"></Setter>
                 <Setter Property="Foreground" Value="#ffffff"></Setter>
             </Style>
-
             <Style x:Key="button" TargetType="Button">
                 <Setter Property="FontSize" Value="14"></Setter>
                 <Setter Property="Width" Value="170"></Setter>
@@ -58,7 +57,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
             <Style x:Key="buttonCircle" TargetType="Button">
                 <Setter Property="Background" Value="Transparent"></Setter>
                 <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
@@ -97,7 +95,6 @@
                 <Setter Property="BorderBrush" Value="Transparent"></Setter>
                 <Setter Property="BorderThickness" Value="1"></Setter>
             </Style>
-
             <Style x:Key="mainButton" TargetType="Button">
                 <Setter Property="FontSize" Value="14"></Setter>
                 <Setter Property="Width" Value="170"></Setter>
@@ -126,7 +123,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
             <Style x:Key="imgClose" TargetType="Image">
                 <Setter Property="Width" Value="30"></Setter>
                 <Setter Property="Height" Value="30"></Setter>
@@ -143,7 +139,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
             <Style x:Key="buttonImageCircle" TargetType="Button">
                 <Setter Property="Background" Value="Gray"></Setter>
                 <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
@@ -167,10 +162,8 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-
             <Style x:Key="uploadButtonImage" TargetType="Button">
-                <Setter Property="Background" Value="Gray"></Setter>
+                <Setter Property="Background" Value="#577a6f"></Setter>
                 <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
                 <Setter Property="Margin" Value="0 0"></Setter>
                 <Setter Property="Template">

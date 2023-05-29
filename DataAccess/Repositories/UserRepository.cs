@@ -86,7 +86,6 @@ namespace DataAccess.Repositories
                     x.SRole.ToLower().Contains(keyword) ||
                     x.CreatedUser.ToLower().Contains(keyword)).ToList();
                 }
-
                 return query;
             }
             catch (Exception ex)
@@ -95,7 +94,6 @@ namespace DataAccess.Repositories
                 return new List<Model.User>();
             }
         }
-
         public List<Model.Role>?  GetRoleList()
         {
             try
@@ -121,7 +119,6 @@ namespace DataAccess.Repositories
                 return new List<Model.Role>();
             }
         }
-
         public async Task<int> SaveUser(Model.User obj)
         {
             try
@@ -155,7 +152,6 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-
         public async Task<int> UpdateUser(Model.User obj)
         {
             try
@@ -198,7 +194,6 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-
         public async Task<int> DeleteUser(Model.User obj)
         {
             try
@@ -225,7 +220,6 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-
         public async Task<Model.User> GetUserById(int id)
         {
             try
@@ -260,7 +254,6 @@ namespace DataAccess.Repositories
                 return new Model.User();
             }
         }
-
         public async Task<int> ChangePassword(Model.User user)
         {
             try
@@ -287,7 +280,7 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-        private User CopyClassMember(Model.User obj)
+       private User CopyClassMember(Model.User obj)
         {
             User user = new();
             user.FirstName = obj.FirstName;

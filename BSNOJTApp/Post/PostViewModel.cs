@@ -324,7 +324,6 @@ namespace BSNOJTApp.Post
             };
             if (saveFileDialog.ShowDialog() == true)
             {
-
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
                 using (ExcelPackage excelPackage = new())
                 {

@@ -6,7 +6,6 @@ namespace BSNOJT.Front.AppLibrary
 {
     public class iNumericConverter : IValueConverter
     {
-
         object IValueConverter.Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             string fmtString = CommonLibrary.iConvert.ToString(parameter);
@@ -24,12 +23,9 @@ namespace BSNOJT.Front.AppLibrary
 
             return CommonLibrary.iConvert.ToDecimal(value).ToString(fmtString);
         }
-
         object? IValueConverter.ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return CommonLibrary.iConvert.ToDecimalNullable(value);
         }
-
-
     }
 }

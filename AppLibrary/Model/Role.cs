@@ -1,5 +1,4 @@
 ﻿using Model;
-
 namespace BSNOJT.Front.AppLibrary.Model
 {
     public class Role : IRole

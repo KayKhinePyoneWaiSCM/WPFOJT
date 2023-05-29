@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 
 namespace BSNOJT.Front.AppLibrary
@@ -26,7 +22,6 @@ namespace BSNOJT.Front.AppLibrary
 
             return CommonLibrary.iConvert.ToDateTime(value);
         }
-
         /// <summary>
         /// Convert back
         /// </summary>
@@ -41,7 +36,5 @@ namespace BSNOJT.Front.AppLibrary
         {
             return CommonLibrary.iConvert.ToDateTimeNullable(value);
         }
-
-
     }
 }

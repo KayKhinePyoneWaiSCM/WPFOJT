@@ -1,6 +1,5 @@
 ﻿using BSNOJT.Model;
 using System;
-
 namespace BSNOJT.Front.AppLibrary.Model
 {
     public class User : IUser, ICommonProperty
@@ -13,7 +12,6 @@ namespace BSNOJT.Front.AppLibrary.Model
             this.ConstructModel();
             this.Email = string.Empty;
             this.Password = string.Empty;
-
         }
 
         /// <summary>
@@ -69,7 +67,6 @@ namespace BSNOJT.Front.AppLibrary.Model
             this.SActive = string.Empty;
             this.NPass = string.Empty;
         }
-
         #region Properties
         /// <summary>
         /// Define id

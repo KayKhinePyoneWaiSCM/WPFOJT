@@ -1,6 +1,5 @@
 ﻿using Model;
 using System.ComponentModel;
-
 namespace BSNOJTApp.User
 {
     public class RoleModel : IRole, INotifyPropertyChanged

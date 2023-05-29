@@ -143,8 +143,6 @@ namespace BSNOJTApp.User
         /// <returns></returns>
         public string? ImageCopyPath;
         #endregion
-
-
         /// <summary>
         /// Initialize
         /// </summary>
@@ -264,7 +262,6 @@ namespace BSNOJTApp.User
                 validate = false;
                 iMessage.ShowWarning("Password format is incorrect", "Password must have at least 8 characters and contain one uppercase letter, one lowercase letter, one digit...");
             }
-
             if (validate)
             {
                 using (var webApi = new iServiceUser())
@@ -365,7 +362,6 @@ namespace BSNOJTApp.User
         {
             if (CheckInput())
             {
-
                 Mouse.OverrideCursor = Cursors.Wait;
                 using var webApi = new iServiceUser();
                 if (User.Id <= 0)
@@ -403,7 +399,6 @@ namespace BSNOJTApp.User
                     {
                         iMessage.ShowError(iMessage.MT_0130, iMessage.EMSG_TRAN_0110);
                     }
-                    //DeleteImage("create");
                 }
                 else
                 {
@@ -449,7 +444,6 @@ namespace BSNOJTApp.User
                 }
             }
         }
-
         public void CopyImage()
         {
             if (Photo != null)
@@ -459,7 +453,6 @@ namespace BSNOJTApp.User
                 File.Copy(ImageCopyPath, destinationPath, true);
             }
         }
-
         public void DeleteImage(string name)
         {
             if (Photo != null)
@@ -473,7 +466,6 @@ namespace BSNOJTApp.User
                 {
                     filePath = Path.Combine("Photos");
                 }
-
                 string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
                 string test = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath, Photo);
                 string[] imageExtensions = new string[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -482,7 +474,6 @@ namespace BSNOJTApp.User
                                                .ToArray();
                 foreach (string imageFile in imageFiles)
                 {
-
                     if (imageFile != test && IsFileInUse(imageFile) != true)
                     {
                         File.Delete(imageFile);
@@ -491,37 +482,31 @@ namespace BSNOJTApp.User
             }
         }
 
-
         bool IsFileInUse(string filePath)
         {
             try
             {
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
                 {
-                    // The file is not locked by another process
-                    return false;
+                   return false;
                 }
             }
             catch (IOException)
             {
-                // The file is locked by another process
-                return true;
+                 return true;
             }
         }
         private bool IsPasswordValid(string password)
         {
             if (password.Length < 8)
                 return false;
-
             if (!password.Any(char.IsUpper))
                 return false;
 
             if (!password.Any(char.IsLower))
                 return false;
-
             if (!password.Any(char.IsDigit))
                 return false;
-
             return true;
         }
 
@@ -554,7 +539,6 @@ namespace BSNOJTApp.User
             {
                 MainViewModel.Instance.PagePath = iNavigation.POST_LIST;
             }
-
         }
 
         /// <summary>
@@ -612,15 +596,6 @@ namespace BSNOJTApp.User
                 iMessage.ShowInfomation(mtString, iMessage.WMSG_TRAN_U_2140);
                 inputResult = false;
             }
-            //else if (string.IsNullOrEmpty(User.SDob))
-            //{
-            //    iMessage.ShowWarning(mtString, iMessage.WMSG_TRAN_U_2150);
-            //}
-            //else if (string.IsNullOrEmpty(User.Address))
-            //{
-            //    iMessage.ShowInfomation(mtString, iMessage.WMSG_TRAN_U_2160);
-            //    inputResult = false;
-            //}
             return inputResult;
         }
     }

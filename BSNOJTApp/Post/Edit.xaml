@@ -12,7 +12,6 @@
       TextOptions.TextFormattingMode="Ideal"
       TextOptions.TextRenderingMode="Auto"
       Background="White">
-
     <Grid>
         <StackPanel>
             <ictrl:iItemTitile Text="Edit Post"
@@ -60,7 +59,6 @@
                          Width="220"
                          VerticalAlignment="Center"
                          />
-
                 <ictrl:iItemTitile Text="Description"
                            Grid.Row="1"
                            Grid.Column="0"
@@ -93,6 +91,7 @@
                             Grid.Column="1"
                             Grid.ColumnSpan="5"
                             Orientation="Horizontal"
+                            Margin="15,0,0,0"
                             >
                     <Button Content="Save"
                             Height="40"
@@ -103,8 +102,7 @@
                             FontSize="14"
                             Foreground="#FFF"
                             Background="#577a6f"
-                            Margin="0,0,20,0"
-                                                />
+                            Margin="0,0,20,0" />
                     <Button Content="Cancel"
                             Height="40"
                             Width="100"
@@ -113,8 +111,7 @@
                             FontSize="14"
                             Command="{Binding Path=Cancel}"
                             Foreground="#FFF"
-                            Background="#577a6f"
-                                                />
+                            Background="#577a6f" />
                 </StackPanel>
             </Grid>
         </StackPanel>

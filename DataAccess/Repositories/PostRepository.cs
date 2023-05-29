@@ -65,7 +65,6 @@ namespace DataAccess.Repositories
                 return new List<Model.Post>();
             }
         }
-
         public async Task<int> SavePost(Model.Post obj)
         {
             try
@@ -101,7 +100,6 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-
         /// <summary>
         /// Delete post by id
         /// </summary>
@@ -134,7 +132,6 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-
         /// <summary>
         /// Get post by id
         /// </summary>
@@ -167,7 +164,6 @@ namespace DataAccess.Repositories
                 return new Model.Post();
             }
         }
-
         /// <summary>
         /// Update post data into table
         /// </summary>
@@ -264,8 +260,6 @@ namespace DataAccess.Repositories
                 return new List<Model.Post>();
             }
         }
-
-
         /// <summary>
         /// Upload data from excel to table
         /// </summary>

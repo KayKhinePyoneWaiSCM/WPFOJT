@@ -1,8 +1,6 @@
-﻿using BSNOJT.Back.WebAPI;
-using DataAccess.Repositories;
+﻿using DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Model;
-
 namespace BSNOJT.Back.WebAPI.API
 {
     [Route("User")]
@@ -19,7 +17,6 @@ namespace BSNOJT.Back.WebAPI.API
         [HttpPost("GetUserList")]
         public async Task<ActionResult<List<User>?>> GetUser(User objData)
         {
-
             Microsoft.Extensions.Primitives.StringValues requestHeaderValue;
             Request.Headers.TryGetValue(APISetting.KEY_APITOKEN, out requestHeaderValue);
             if (APISetting.Configuration.GetValue(APISetting.KEY_APITOKEN, string.Empty).Equals(requestHeaderValue) == false)

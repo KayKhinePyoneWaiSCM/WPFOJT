@@ -1,7 +1,6 @@
 ﻿using BSNOJT.Front.AppControls;
 using System.Windows;
 using System.Windows.Input;
-
 namespace BSNOJTApp.Account
 {
     /// <summary>
@@ -18,7 +17,6 @@ namespace BSNOJTApp.Account
             vm.ParentForm = this;
             InitializeComponent();
         }
-
         private string Vm_Logined()
         {
             return TxtPass.Password;
@@ -33,7 +31,6 @@ namespace BSNOJTApp.Account
         {
             TxtPass.Focus();
         }
-
         private void Border_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
@@ -41,12 +38,10 @@ namespace BSNOJTApp.Account
                 this.DragMove();
             }
         }
-
         private void Image_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Application.Current.Shutdown();
         }
-
         private void txtPassword_PasswordChange(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtPass.Password) && TxtPass.Password.Length > 0)
@@ -58,7 +53,6 @@ namespace BSNOJTApp.Account
                 textPassword.Visibility = Visibility.Visible;
             }
         }
-
         private void txtEmail_TextChange(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             if (!string.IsNullOrEmpty(TxtEmail.Text) && TxtEmail.Text.Length > 0)

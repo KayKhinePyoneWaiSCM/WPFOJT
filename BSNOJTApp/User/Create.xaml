@@ -92,7 +92,6 @@
                          VerticalAlignment="Center"
                          Margin="5,0,25,0" Grid.ColumnSpan="2"
                          />
-
                 <ictrl:iItemTitile Text="Password"
                            Grid.Row="1"
                            Grid.Column="0"
@@ -189,8 +188,8 @@
                          />
                 <Button Grid.Row="2"
                         Grid.Column="5" 
-                        Content="Upload Image" 
-                        Click="ChooseImageButton_Click" HorizontalAlignment="Left" Height="25" Width="90" FontSize="10" Style="{StaticResource buttonImageCircle}" Margin="20,0,0,0" />
+                        Content="Choose Image" 
+                        Click="ChooseImageButton_Click" Height="30" Foreground="#FFF"  HorizontalAlignment="Left" BorderBrush="Black"  Width="100" FontSize="10" Style="{StaticResource uploadButtonImage}" Margin="15,0,0,0" />
                 <Image x:Name="ShowProfileImage"
                        Grid.Row="2"
                        Grid.Column="6"
@@ -221,7 +220,8 @@
                           Margin="15,0,0,0"
                           />
                 <StackPanel Grid.Row="5"
-                            Grid.Column="4"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
                             Orientation="Horizontal"
                             HorizontalAlignment="Center">
                     <Button Content="Save"
@@ -242,7 +242,7 @@
                             FontSize="14"
                             Command="{Binding Path=Cancel}"
                             Foreground="#FFF"
-                            Background="#577a6f" />
+                            Background="#577a6f"/>
                 </StackPanel>
             </Grid>
         </StackPanel>

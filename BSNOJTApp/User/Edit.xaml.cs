@@ -1,5 +1,4 @@
-﻿using BSNOJT.Front.AppLibrary;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Windows;
@@ -31,18 +30,11 @@ namespace BSNOJTApp.User
         /// Constructor
         /// </summary>
         private UserViewModel vm;
-
         private int id;
-
         private string photo;
-
         public UserModel User { get; set; }
-
-        bool chooseImageButtonClicked = false;
-
         private void ChooseImageButton_Click(object sender, RoutedEventArgs e)
         {
-            chooseImageButtonClicked = true;
                 var openFileDialog = new OpenFileDialog();
                 if (openFileDialog.ShowDialog() == true)
                 {
@@ -62,7 +54,7 @@ namespace BSNOJTApp.User
                             vm.Photo = fileName;
                         }
                     }
-            }
+                }
         }
     }
 }

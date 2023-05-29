@@ -1,10 +1,4 @@
 ﻿using BSNOJT.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Model
 {
     public class Post : IPost, ICommonProperty
@@ -30,7 +24,6 @@ namespace Model
             this.CreatedBy = null;
             this.Keyword = string.Empty;
         }
-
         /// <summary>
         /// Define id
         /// </summary>

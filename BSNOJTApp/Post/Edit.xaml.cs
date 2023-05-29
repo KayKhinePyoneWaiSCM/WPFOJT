@@ -1,5 +1,4 @@
 ﻿using System.Windows.Controls;
-
 namespace BSNOJTApp.Post
 {
     /// <summary>
@@ -13,7 +12,6 @@ namespace BSNOJTApp.Post
             this.DataContext = vm;
             InitializeComponent();
         }
-
         private PostViewModel vm;
     }
 }

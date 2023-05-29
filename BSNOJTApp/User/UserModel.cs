@@ -1,10 +1,6 @@
 ﻿using BSNOJT.Model;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BSNOJTApp.User
 {
@@ -36,7 +32,6 @@ namespace BSNOJTApp.User
             this.SActive = string.Empty;
             this.NewPassword = string.Empty;
         }
-
 
         /// <summary>
         /// Define id
@@ -87,7 +82,6 @@ namespace BSNOJTApp.User
                 _fullname = value;
                 OnPropertyChanged("FullName");
             }
-
         }
 
         /// <summary>
@@ -436,5 +430,4 @@ namespace BSNOJTApp.User
             }
         }
     }
-
 }

@@ -1,10 +1,5 @@
 ﻿using BSNOJT.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace BSNOJT.Front.AppLibrary.Model
 {
     public class Post:IPost,ICommonProperty
@@ -127,6 +122,5 @@ namespace BSNOJT.Front.AppLibrary.Model
         /// Define datastatus
         /// </summary>
         public int DataStatus { get; set; }
-
     }
 }

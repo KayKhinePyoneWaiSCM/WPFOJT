@@ -103,7 +103,7 @@ namespace BSNOJTApp.Account {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;component/account/login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;V1.0.0.0;component/account/login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Account\Login.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

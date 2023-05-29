@@ -112,7 +112,6 @@ namespace AppLibrary.WebServiceInterface
                 return iConstance.APIRESULT_ERROR;
             }
             return iConvert.ToInt(result);
-
         }
 
         /// <summary>
@@ -262,7 +261,6 @@ namespace AppLibrary.WebServiceInterface
                 return (Post)objData;
             }
         }
-
         /// <summary>
         /// Dispose httpclient
         /// </summary>

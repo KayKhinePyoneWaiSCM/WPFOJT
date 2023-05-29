@@ -2,7 +2,6 @@
 {
     public class iConstance
     {
-
         #region システム関連
 
         /// <summary>
@@ -49,8 +48,6 @@
         public const int DATASTATUS_DELETE = 3;
 
         #endregion
-
-
         #region レイアウト関連
 
         public const int WINDOW_DEFAULT_WIDTH = 1280;
@@ -69,6 +66,5 @@
         public const string COLOR_READONLY = "#FFD6D6D6";
 
         #endregion
-
     }
 }

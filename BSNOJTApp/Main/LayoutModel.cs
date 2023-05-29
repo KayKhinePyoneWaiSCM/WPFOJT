@@ -31,7 +31,6 @@ namespace BSNOJTApp.Main
             this.SActive = string.Empty;
             this.NewPassword = string.Empty;
         }
-
         /// <summary>
         /// Define id
         /// </summary>
@@ -48,7 +47,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Id");
             }
         }
-
         /// <summary>
         /// Define fullname
         /// </summary>
@@ -65,7 +63,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("FullName");
             }
         }
-
         /// <summary>
         /// Define srole
         /// </summary>
@@ -82,7 +79,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("SRole");
             }
         }
-
         /// <summary>
         /// Define screateddate
         /// </summary>
@@ -99,7 +95,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("SCreatedDate");
             }
         }
-
         /// <summary>
         /// Define sdob
         /// </summary>
@@ -116,7 +111,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("SDob");
             }
         }
-
         /// <summary>
         /// Define createduser
         /// </summary>
@@ -133,7 +127,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("CreatedUser");
             }
         }
-
         /// <summary>
         /// Define sactive
         /// </summary>
@@ -150,7 +143,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("SActive");
             }
         }
-
         /// <summary>
         /// Define firstname
         /// </summary>
@@ -167,7 +159,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("FirstName");
             }
         }
-
         /// <summary>
         /// Define lastname
         /// </summary>
@@ -184,7 +175,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("LastName");
             }
         }
-
         /// <summary>
         /// Define email
         /// </summary>
@@ -201,7 +191,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Email");
             }
         }
-
         /// <summary>
         /// Define password
         /// </summary>
@@ -218,7 +207,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Password");
             }
         }
-
         /// <summary>
         /// Define cpassword
         /// </summary>
@@ -235,7 +223,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged(nameof(CPassword));
             }
         }
-
         /// <summary>
         /// Define new password
         /// </summary>
@@ -252,7 +239,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged(nameof(NewPassword));
             }
         }
-
         /// <summary>
         /// Define phoneno
         /// </summary>
@@ -269,7 +255,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("PhoneNo");
             }
         }
-
         /// <summary>
         /// Define phoneno
         /// </summary>
@@ -286,7 +271,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Photo");
             }
         }
-
         /// <summary>
         /// Define address
         /// </summary>
@@ -303,7 +287,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Address");
             }
         }
-
         /// <summary>
         /// Define dob
         /// </summary>
@@ -320,7 +303,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Dob");
             }
         }
-
         /// <summary>
         /// Define role
         /// </summary>
@@ -337,7 +319,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("Role");
             }
         }
-
         /// <summary>
         /// Define isactive
         /// </summary>
@@ -354,7 +335,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("IsActive");
             }
         }
-
         /// <summary>
         /// DEfine isdeleted
         /// </summary>
@@ -371,7 +351,6 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged("IsDeleted");
             }
         }
-
         /// <summary>
         /// Define keyword
         /// </summary>
@@ -388,17 +367,14 @@ namespace BSNOJTApp.Main
                 OnPropertyChanged(nameof(Keyword));
             }
         }
-
         /// <summary>
         /// Define datastatus
         /// </summary>
         public int DataStatus { get; set; }
-
         /// <summary>
         /// Property changed event
         /// </summary>
         public event PropertyChangedEventHandler? PropertyChanged;
-
         /// <summary>
         /// Invoke property change
         /// </summary>

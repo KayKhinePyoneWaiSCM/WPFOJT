@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
 namespace BSNOJTApp.User
 {
     /// <summary>
@@ -26,12 +13,11 @@ namespace BSNOJTApp.User
             vm = new UserViewModel();
             this.DataContext = vm;
         }
-
         // <summary>
         /// Define vm
         /// </summary>
         private UserViewModel vm;
-
+        /// <summary>
         /// <summary>
         /// Navigate to user edit page
         /// </summary>

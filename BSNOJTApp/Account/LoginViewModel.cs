@@ -15,7 +15,6 @@ namespace BSNOJTApp.Account
                 this.InitializeWindow();
             },
             () => true);
-
             this.WindowClosed = new iDelegateCommand((object? arg) =>
             {
                 webApi.Dispose();
@@ -26,7 +25,6 @@ namespace BSNOJTApp.Account
             (object? arg) =>
             {
                 this.Login();
-
             },
             () => true);
         }
@@ -44,9 +42,7 @@ namespace BSNOJTApp.Account
                 this.OnPropertyChanged("Email");
             }
         }
-
         private string _password = string.Empty;
-
         public string Password
         {
             get
@@ -59,17 +55,10 @@ namespace BSNOJTApp.Account
                 this.OnPropertyChanged("Password");
             }
         }
-
         private iServiceSystem webApi;
-
         public iDelegateCommand LoginCommand { get; set; }
-
-
         public delegate string LoginEventHandler();
-
-
         public event LoginEventHandler? Logined;
-
         private async void Login()
         {
             if (this.Logined != null)
@@ -97,7 +86,6 @@ namespace BSNOJTApp.Account
                 }
             }
         }
-
         public bool checkEmailFormat(string email)
         {
             bool check = false;
@@ -113,12 +101,10 @@ namespace BSNOJTApp.Account
             }
             return check;
         }
-
         private void InitializeWindow()
         {
             this.clearData();
         }
-
         private bool CheckInput()
         {
             bool inputResult = true;
@@ -140,7 +126,6 @@ namespace BSNOJTApp.Account
             Mouse.OverrideCursor = null;
             return inputResult;
         }
-
         private void clearData()
         {
             this.Email = string.Empty;

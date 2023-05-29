@@ -1,11 +1,5 @@
 ﻿using BSNOJT.Model;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace BSNOJTApp.Post
 {
     public class PostModel : IPost, INotifyPropertyChanged
@@ -57,7 +51,6 @@ namespace BSNOJTApp.Post
                 OnPropertyChanged(nameof(Title));
             }
         }
-
         /// <summary>
         /// Define description
         /// </summary>
@@ -74,7 +67,6 @@ namespace BSNOJTApp.Post
                 OnPropertyChanged(nameof(Description));
             }
         }
-
         /// <summary>
         /// Define ispublished
         /// </summary>
@@ -91,7 +83,6 @@ namespace BSNOJTApp.Post
                 OnPropertyChanged(nameof(IsPublished));
             }
         }
-
         /// <summary>
         /// Define isdeleted
         /// </summary>
@@ -108,7 +99,6 @@ namespace BSNOJTApp.Post
                 OnPropertyChanged(nameof(IsDeleted));
             }
         }
-
         /// <summary>
         /// Define createduserid
         /// </summary>
@@ -125,7 +115,6 @@ namespace BSNOJTApp.Post
                 OnPropertyChanged(nameof(CreatedUserId));
             }
         }
-
         /// <summary>
         /// Define spublished
         /// </summary>

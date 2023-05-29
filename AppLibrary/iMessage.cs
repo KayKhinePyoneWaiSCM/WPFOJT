@@ -4,8 +4,6 @@ namespace BSNOJT.Front.AppLibrary
 {
     public class iMessage
     {
-
-
         #region "メッセージ定義"
 
         // =====================================
@@ -170,7 +168,6 @@ namespace BSNOJT.Front.AppLibrary
 
         #endregion
 
-
         #region メッセージタイトル定義
 
         // =====================================
@@ -252,7 +249,6 @@ namespace BSNOJT.Front.AppLibrary
         public const string MT_0250 = "Logout";
 
         #endregion
-
 
         /// <summary>
         /// 情報を伝えるメッセージを表示する

@@ -4,7 +4,6 @@ using BSNOJTApp.Account;
 using BSNOJTApp.ViewModels;
 using System.Windows;
 using System.Windows.Input;
-
 namespace BSNOJTApp.Main
 {
     /// <summary>
@@ -43,32 +42,26 @@ namespace BSNOJTApp.Main
         {
             ExecuteLogout();
         }
-
         private void UserList_Clicked(object sender, RoutedEventArgs e)
         {
             this.menuLayout.Navigate(new BSNOJTApp.User.List());
         }
-
         private void CreateUserBtn_Clicked(object sender, RoutedEventArgs e)
         {
             this.menuLayout.Navigate(new BSNOJTApp.User.Create());
         }
-
         private void PostListBtn_Clicked(object sender, RoutedEventArgs e)
         {
             this.menuLayout.Navigate(new BSNOJTApp.Post.List());
         }
-
         private void CreatePost_Clicked(object sender, RoutedEventArgs e)
         {
             this.menuLayout.Navigate(new BSNOJTApp.Post.Create());
         }
-
         private void LogoutBtn_Clicked(object sender, RoutedEventArgs e)
         {
             ExecuteLogout();
         }
-
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
@@ -76,7 +69,6 @@ namespace BSNOJTApp.Main
                 this.DragMove();
             }
         }
-
         private bool IsMaximized = false;
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -96,7 +88,6 @@ namespace BSNOJTApp.Main
                 }
             }
         }
-
         private void ExecuteLogout()
         {
             MessageBoxResult result = iMessage.ShowQuestion(iMessage.MT_0240, iMessage.QMSG_TRAN_POST_3030, MessageBoxResult.No);

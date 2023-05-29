@@ -15,7 +15,6 @@
       Height="700"
       Width="1280"
       Background="{DynamicResource MaterialDesignPaper}">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

@@ -24,13 +24,10 @@ namespace BSNOJTApp.Main
         /// Define user list
         /// </summary>
         public ObservableCollection<UserModel> UserList { get; set; }
-
         /// <summary>
         /// Define role list
         /// </summary>
         public ObservableCollection<RoleModel> RoleList { get; set; }
-
-
         /// <summary>
         /// Get user data by id
         /// </summary>

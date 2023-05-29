@@ -42,7 +42,6 @@ namespace AppLibrary.WebServiceInterface
         /// <returns>
         /// The <see cref="Task{ObservableCollection{User}}"/>
         /// </returns>
-
         public async Task<ObservableCollection<User>> GetAllAsync(string searchName,int id)
         {
             string? result;
@@ -202,6 +201,5 @@ namespace AppLibrary.WebServiceInterface
         {
             httpClient.Dispose();
         }
-
     }
 }

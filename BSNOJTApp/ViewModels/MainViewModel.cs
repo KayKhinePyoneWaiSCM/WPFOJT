@@ -1,18 +1,15 @@
 ﻿using AppLibrary.WebServiceInterface;
 using BSNOJT.CommonLibrary;
-using BSNOJT.Front.AppLibrary;
 using BSNOJT.Model;
 using BSNOJTApp.User;
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace BSNOJTApp.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-
         public UserModel? User { get; set; }
 
         /// <summary>
@@ -38,7 +35,6 @@ namespace BSNOJTApp.ViewModels
                 OnPropertyChanged("FirstName");
             }
         }
-
 
         /// <summary>
         /// Define instance
