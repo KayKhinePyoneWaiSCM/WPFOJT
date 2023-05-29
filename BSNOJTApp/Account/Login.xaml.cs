@@ -19,10 +19,6 @@ namespace BSNOJTApp.Account
             InitializeComponent();
         }
 
-
-        //kkpw
-
-
         private string Vm_Logined()
         {
             return TxtPass.Password;
