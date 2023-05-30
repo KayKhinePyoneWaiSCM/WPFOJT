@@ -13,7 +13,6 @@
       TextOptions.TextFormattingMode="Ideal"
       TextOptions.TextRenderingMode="Auto"
       Background="White">
-
     <Grid>
         <StackPanel>
             <ictrl:iItemTitile Text="Change Password"
@@ -57,7 +56,6 @@
                          BorderBrush="#577a6f"
                          Width="220"
                          VerticalAlignment="Center" Margin="0,0,450,0"/>
-
                 <ictrl:iItemTitile Text="New Password"
                            Grid.Row="1"
                            Width="100"
@@ -79,7 +77,6 @@
                          BorderBrush="#000"
                          Width="220"
                          VerticalAlignment="Center" Margin="0,0,450,0"/>
-
                 <ictrl:iItemTitile Text="Confirm Password"
                            Width="120"
                            Grid.Row="2"
@@ -124,7 +121,8 @@
                             BorderBrush="Transparent"
                             FontSize="14"
                             Command="{Binding Path=Cancel}"
-                            Foreground="#FFF"/>
+                            Foreground="#FFF"
+                            Background="#577a6f"/>
                 </StackPanel>
             </Grid>
         </StackPanel>

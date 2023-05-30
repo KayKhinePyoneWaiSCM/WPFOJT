@@ -1,7 +1,6 @@
 ﻿using BSNOJT.Back.DataAccess;
 using BSNOJT.Back.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
-
 namespace DataAccess.Repositories
 {
     public class PostRepository

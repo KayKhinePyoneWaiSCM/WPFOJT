@@ -34,7 +34,6 @@ namespace BSNOJT.Back.WebAPI.API
             {
                 return null;
             }
-
         }
     }
 }

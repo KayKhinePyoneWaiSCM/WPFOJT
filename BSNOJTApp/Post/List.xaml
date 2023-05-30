@@ -15,7 +15,7 @@
       Height="700"
       Width="1280"
       Background="{DynamicResource MaterialDesignPaper}">
-    <Grid>
+    <Grid Margin="50 40 40 50">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
@@ -32,6 +32,7 @@
             <ictrl:iItemTitile Text="Post List"
                                        HorizontalAlignment="Left"
                                        FontSize="20"
+                                       Foreground="#577a6f"
                                        FontWeight="Bold"
                                        Width="106"
                                        TextAlignment="Left"
@@ -39,8 +40,11 @@
                                        Margin="20,0,0,15" VerticalAlignment="Center"
                                        />
             <ictrl:iTextBox Grid.Column="1"
+                                    BorderThickness="2" 
+                                    BorderBrush="#577a6f"
+                                    Style="{StaticResource txtBox}"
                                     HorizontalAlignment="Right"
-                                    Width="250"
+                                    Width="200"
                                     Margin="0,0,0,15"
                                     Text="{Binding Path=Post.Keyword}"/>
             <Button Content="Search"
@@ -92,7 +96,10 @@
                             HorizontalAlignment="Right"
                             Margin="0,0,20,15"/>
         </Grid>
-        <ictrl:iDataGrid x:Name="postDataGrid" ItemsSource="{Binding Path=PostList}" Grid.Row="1" RowHeight="40">
+        <ictrl:iDataGrid x:Name="postDataGrid" ItemsSource="{Binding Path=PostList}" Grid.Row="1" RowHeight="35" BorderBrush="#FF0B0C0C">
+            <ictrl:iDataGrid.ColumnHeaderStyle>
+                <Style/>
+            </ictrl:iDataGrid.ColumnHeaderStyle>
             <DataGrid.RowHeaderStyle>
                 <Style TargetType="DataGridRowHeader">
                     <Setter Property="Width" Value="20" />
@@ -101,7 +108,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="No" Binding="{Binding Path=No}" Width="50" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Title" Binding="{Binding Path=Title}" Width="200" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Description" Binding="{Binding Path=Description}" Width="300" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Path=Description}" Width="240" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Path=SPublished}" Width="150" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Created At" Binding="{Binding Path=CreatedAt}" Width="180" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Created By" Binding="{Binding Path=CreatedBy}" Width="180" IsReadOnly="True"/>

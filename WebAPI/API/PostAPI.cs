@@ -2,7 +2,6 @@
 using DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Model;
-
 namespace WebAPI.API
 {
     [Route("Post")]
@@ -127,7 +126,6 @@ namespace WebAPI.API
             }
             PostRepository postRepository = new();
             return await postRepository.UploadPost(postList);
-
         }
 
         /// <summary>
