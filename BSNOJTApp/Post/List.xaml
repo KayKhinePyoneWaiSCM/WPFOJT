@@ -112,7 +112,7 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding Path=SPublished}" Width="150" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Created At" Binding="{Binding Path=CreatedAt}" Width="180" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Created By" Binding="{Binding Path=CreatedBy}" Width="180" IsReadOnly="True"/>
-                <DataGridTemplateColumn Width="*">
+                <DataGridTemplateColumn Header="Action" Width="*">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">

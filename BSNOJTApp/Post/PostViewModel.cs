@@ -143,20 +143,22 @@ namespace BSNOJTApp.Post
                 {
                     int i = 0;
                     foreach (var data in getPosts)
-                    {
-                        i++;
+                    {               
                         PostModel post = new();
                         iConvert.CopyClassProperty<IPost>(data, post);
-                        post.No = i;
                         if (iAppSettings.LoginUser.Role != 1)
                         {
                             if (post.CreatedUserId == iConvert.ToString(iAppSettings.LoginUser.Id))
                             {
+                                i++;
+                                post.No = i;
                                 PostList.Add(post);
                             }
                         }
                         else
                         {
+                            i++;
+                            post.No = i;
                             PostList.Add(post);
                         }
                     }
