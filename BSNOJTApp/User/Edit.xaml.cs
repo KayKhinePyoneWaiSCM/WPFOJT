@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using BSNOJT.Front.AppLibrary;
+using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Windows;
@@ -53,6 +54,10 @@ namespace BSNOJTApp.User
                         ShowProfileImage.Source = image;
                         vm.Photo = fileName;
                     }
+                }
+                else
+                {
+                    iMessage.ShowInfomation("Incorrect Image Extension", "Please,Choose jpg,png or jpeg file extension....");
                 }
             }
         }
