@@ -7,11 +7,10 @@
         xmlns:dc ="clr-namespace:BSNOJTApp"
         xmlns:ictrl="clr-namespace:BSNOJT.Front.AppControls;assembly=AppControls" 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
-       xmlns:viewmodels="clr-namespace:BSNOJTApp.Main" 
-       IsDisplayClosingMessage="False"
+        xmlns:viewmodels="clr-namespace:BSNOJTApp.Main" 
+        IsDisplayClosingMessage="False"
         WindowState="Maximized"
         mc:Ignorable="d"
-       d:DataContext="{d:DesignInstance Type=local:LayoutViewModel}"
         Background="White"
         Title="Layout" Height="600" Width="800">
     <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
@@ -27,6 +26,17 @@
             <Grid Grid.Column="0" Background="#577a6f"></Grid>
             <materialDesign:ColorZone Mode="PrimaryMid" Grid.Column="1" Background="#577a6f" VerticalAlignment="Top">
                 <Grid >
+                    <Image Source="/Assets/img_music.png" HorizontalAlignment="Left" Width="20" Height="20"/>
+                    <TextBlock x:Name="logoName" Text="BSNWPF" Foreground="White" DockPanel.Dock="Top" TextAlignment="Left" FontSize="18" FontWeight="SemiBold" RenderTransformOrigin="0.5,0.5" Margin="24,18,409,23">
+                    <Image Source="/Assets/img_music.png" HorizontalAlignment="Left" Width="20" Height="20"/>
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.097"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform></TextBlock>
                     <materialDesign:PopupBox Foreground="White" Background="#577a6f" PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" Margin="20">
                         <StackPanel Background="#577a6f">
                             <Button x:Name="profileBtn" Content="Profile" Foreground="White" FontSize="14" Click="ProfileBtn_Clicked"/>
@@ -39,14 +49,14 @@
             </materialDesign:ColorZone>
             <Border Grid.Row="1" Background="#577a6f" CornerRadius="0 50 0 30">
                 <DockPanel>
-                    <Border Width="80" Height="80" Padding="3" DockPanel.Dock="Top" Background="White" CornerRadius="100" HorizontalAlignment="Center" Margin="0 -45 0 10">
+                    <Border Width="68" Height="68" Padding="3" DockPanel.Dock="Top" Background="White" CornerRadius="100" HorizontalAlignment="Center" Margin="0 -38 0 10">
                         <Ellipse>
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="/Image/LayoutImage.jpg" />
+                                <ImageBrush x:Name="profileSrc"></ImageBrush>
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>
-                    <TextBlock x:Name="txtUserName" Text="Welcome To"  Foreground="White" DockPanel.Dock="Top" TextAlignment="Center" FontSize="22" FontWeight="SemiBold" Height="29"></TextBlock>
+                    <TextBlock x:Name="txtUserName" Foreground="White" DockPanel.Dock="Top" TextAlignment="Center" FontSize="17" FontWeight="SemiBold" Height="29"></TextBlock>
                     <Separator Margin="25" Background="White" DockPanel.Dock="Top" Height="5"></Separator>
                     <StackPanel
             Width="250"

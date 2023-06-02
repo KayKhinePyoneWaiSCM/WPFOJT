@@ -4,6 +4,7 @@ using BSNOJTApp.Account;
 using BSNOJTApp.ViewModels;
 using System.Windows;
 using System.Windows.Input;
+
 namespace BSNOJTApp.Main
 {
     /// <summary>
@@ -20,7 +21,6 @@ namespace BSNOJTApp.Main
             CheckIsAdmin();
             this.DataContext = MainViewModel.Instance;
         }
-
         private void CheckIsAdmin()
         {
             if (iAppSettings.LoginUser.Id <= 0 || iAppSettings.LoginUser.Role < 1)
@@ -32,12 +32,10 @@ namespace BSNOJTApp.Main
         {
             this.menuLayout.Navigate(new BSNOJTApp.User.Profile(iAppSettings.LoginUser.Id));
         }
-
         private void ChangePassBtn_Clicked(object sender, RoutedEventArgs e)
         {
             this.menuLayout.Navigate(new BSNOJTApp.User.ChangePass());
         }
-
         private void PopupLogout_Clicked(object sender, RoutedEventArgs e)
         {
             ExecuteLogout();

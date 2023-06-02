@@ -28,6 +28,8 @@ namespace DataAccess.Repositories
                         model.Id = query.Id;
                         model.Role = query.Role;
                         model.FirstName = query.FirstName;
+                        model.LastName = query.LastName;
+                        model.Photo = query.Photo;
                         return true;
                     }
                     else

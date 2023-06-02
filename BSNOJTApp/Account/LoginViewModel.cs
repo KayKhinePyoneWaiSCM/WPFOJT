@@ -1,7 +1,14 @@
 ﻿using BSNOJT.Front.AppControls;
 using BSNOJT.Front.AppLibrary;
 using System.Text.RegularExpressions;
+using System.Windows.Controls;
+using System.Windows;
 using System.Windows.Input;
+using System.Linq;
+using System.Windows.Media;
+using System.IO;
+using System.Windows.Media.Imaging;
+using System;
 
 namespace BSNOJTApp.Account
 {
@@ -80,12 +87,27 @@ namespace BSNOJTApp.Account
                     iAppSettings.LoginUser.Email = result.Email;
                     iAppSettings.LoginUser.Role = result.Role;
                     iAppSettings.LoginUser.FirstName = result.FirstName;
+                    iAppSettings.LoginUser.Photo = result.Photo;
+                    iAppSettings.LoginUser.LastName = result.LastName;
                     Main.Layout layout = new Main.Layout();
                     layout.Show();
                     this.ParentForm?.Close();
+                    BindProfile();
                 }
             }
         }
+
+        public void BindProfile()
+        {
+            Window? currentWindow = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
+            var imageSrc = currentWindow.FindName("profileSrc") as ImageBrush;
+            var txtBox = currentWindow.FindName("txtUserName") as TextBlock;
+            txtBox.Text = iAppSettings.LoginUser.FirstName + " " + iAppSettings.LoginUser.LastName;
+            string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Image", iAppSettings.LoginUser.Photo);
+            BitmapImage image = new BitmapImage(new Uri(destinationPath));
+            imageSrc.ImageSource = image;
+        }
+
         public bool checkEmailFormat(string email)
         {
             bool check = false;

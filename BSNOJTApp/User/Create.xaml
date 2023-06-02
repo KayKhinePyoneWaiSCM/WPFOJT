@@ -12,7 +12,7 @@
       TextOptions.TextFormattingMode="Ideal"
       TextOptions.TextRenderingMode="Auto"
       Background="White">
-    <Grid>
+    <Grid Margin="50 40 40 50">
         <StackPanel>
             <ictrl:iItemTitile Text="Create User"
                                        HorizontalAlignment="Left"

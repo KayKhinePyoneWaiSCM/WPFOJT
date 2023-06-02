@@ -23,16 +23,16 @@
         <Border Grid.Column="0" CornerRadius="10 0 0 10" MouseDown="Border_MouseDown">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#577a6f" Offset="0"></GradientStop>
-                    <GradientStop Color="#3AADA1" Offset="1"></GradientStop>
+                    <GradientStop Color="#abc9c6" Offset="0"></GradientStop>
+                    <GradientStop Color="#217068" Offset="1"></GradientStop>
                 </LinearGradientBrush>
             </Border.Background>
             <Grid>
                 <Canvas>
-                    <Polygon Points="0 20 230,140 0,270" Fill="#4EB186"></Polygon>
-                    <Polygon Points="100,400 200,370 180,470" Fill="#4EB186"></Polygon>
-                    <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#4EB186"></Ellipse>
-                    <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#4EB186"></Ellipse>
+                    <Polygon Points="0 20 230,140 0,270" Fill="#577a6f"></Polygon>
+                    <Polygon Points="100,400 200,370 180,470" Fill="#577a6f"></Polygon>
+                    <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#577a6f"></Ellipse>
+                    <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#577a6f"></Ellipse>
                 </Canvas>
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock  Text="Sing In" Style="{StaticResource titleText}" ></TextBlock>
@@ -42,7 +42,7 @@
         </Border>
         <Border Background="#ffffff" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown" Grid.ColumnSpan="3" Margin="340,0,10,0">
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="Sign In To App" Style="{StaticResource titleText}" Foreground="#3AB19B"></TextBlock>
+                <TextBlock Text="Sign In To App" Style="{StaticResource titleText}" Foreground="#577a6f"></TextBlock>
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center">
                     <Button Style="{StaticResource buttonCircle}">
                         <Image Source="/Assets/img_genre.png" Width="20" Height="20" />

@@ -1,10 +1,10 @@
-﻿using AppLibrary.WebServiceInterface;
-using BSNOJT.CommonLibrary;
-using BSNOJT.Model;
+﻿using BSNOJT.Front.AppLibrary;
 using BSNOJTApp.User;
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 
 namespace BSNOJTApp.ViewModels
 {
@@ -22,7 +22,7 @@ namespace BSNOJTApp.ViewModels
         /// </summary>
         public ObservableCollection<RoleModel>? RoleList { get; set; }
 
-        string _firstName = string.Empty;
+        string _firstName = iAppSettings.LoginUser.FirstName;
         public string FirstName
         {
             get
@@ -53,6 +53,7 @@ namespace BSNOJTApp.ViewModels
         /// </summary>
         private string _pagePath = string.Empty;
         public string PagePath
+
         {
             get
             {
@@ -65,8 +66,8 @@ namespace BSNOJTApp.ViewModels
             }
         }
 
-        string _photo = string.Empty;
-        public string Photo
+        ImageSource _photo = GetProfile();
+        public ImageSource Photo
         {
             get
             {
@@ -83,23 +84,11 @@ namespace BSNOJTApp.ViewModels
         /// Get user data by id
         /// </summary>
         /// <param name="id"></param>
-        private async void GetUserById(int id, string aa = "aa")
+        public static ImageSource GetProfile()
         {
-            using (var webApi = new iServiceUser())
-            {
-                var userModel = await webApi.GetUserById(id);
-                iConvert.CopyClassProperty<IUser?>(userModel, User);
-                User.SDob = iConvert.ToDateFormat(userModel.Dob);
-                if (aa == "aa")
-                {
-                    string filePath = Path.Combine("Image", userModel.Photo);
-                    User.Photo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
-                }
-                else
-                {
-                    User.Photo = userModel.Photo;
-                }
-            }
+            string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Image", iAppSettings.LoginUser.Photo);
+            BitmapImage image = new BitmapImage(new Uri(destinationPath));
+            return image;
         }
     }
 }

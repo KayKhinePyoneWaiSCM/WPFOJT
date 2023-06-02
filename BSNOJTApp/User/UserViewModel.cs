@@ -15,6 +15,9 @@ using System.IO;
 using System.Linq;
 using BSNOJTApp.Main;
 using System.Text.RegularExpressions;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
+using System.Windows.Controls;
 
 namespace BSNOJTApp.User
 {
@@ -389,6 +392,7 @@ namespace BSNOJTApp.User
                     if (result == iConstance.APIRESULT_SUCCESS)
                     {
                         iMessage.ShowInfomation(iMessage.MT_0130, iMessage.IMSG_TRAN_0060);
+                        
                         validatePage();
                     }
                     else if (result == iConstance.APIRESULT_NONEDATA)
@@ -399,6 +403,7 @@ namespace BSNOJTApp.User
                     {
                         iMessage.ShowError(iMessage.MT_0130, iMessage.EMSG_TRAN_0110);
                     }
+                    DeleteImage("create");
                 }
                 else
                 {
@@ -430,6 +435,16 @@ namespace BSNOJTApp.User
                     if (result == iConstance.APIRESULT_SUCCESS)
                     {
                         iMessage.ShowInfomation(iMessage.MT_0150, iMessage.IMSG_TRAN_0070);
+                        if (User.Id == iAppSettings.LoginUser.Id)
+                        {
+                            Window? currentWindow = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
+                            var imageSrc = currentWindow.FindName("profileSrc") as ImageBrush;
+                            var txtBox = currentWindow.FindName("txtUserName") as TextBlock;
+                            txtBox.Text = User.FirstName + " " + User.LastName;
+                            string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Image", data.Photo);
+                            BitmapImage image = new BitmapImage(new Uri(destinationPath));
+                            imageSrc.ImageSource = image;
+                        }
                         validatePage();
                     }
                     else if (result == iConstance.APIRESULT_NONEDATA)
@@ -462,10 +477,15 @@ namespace BSNOJTApp.User
                 {
                     filePath = Path.Combine("Photo");
                 }
+                else if(name == "update")
+                {
+                    filePath = Path.Combine("Image");
+                }
                 else
                 {
                     filePath = Path.Combine("Photos");
                 }
+
                 string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
                 string test = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath, Photo);
                 string[] imageExtensions = new string[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -474,10 +494,11 @@ namespace BSNOJTApp.User
                                                .ToArray();
                 foreach (string imageFile in imageFiles)
                 {
-                    if (imageFile != test && IsFileInUse(imageFile) != true)
-                    {
-                        File.Delete(imageFile);
-                    }
+                    
+                        if (imageFile != test && IsFileInUse(imageFile) != true)
+                        {
+                            File.Delete(imageFile);
+                        }
                 }
             }
         }
@@ -509,7 +530,6 @@ namespace BSNOJTApp.User
                 return false;
             return true;
         }
-
         public bool checkEmailFormat(string email)
         {
             bool check = false;

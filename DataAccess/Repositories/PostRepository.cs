@@ -177,7 +177,6 @@ namespace DataAccess.Repositories
                 using (var _context = new BSNOJTContext())
                 {
                     var exitUser = await _context.Posts.Where(x => x.Title == post.Title && x.Id != post.Id && x.IsDeleted != true).FirstOrDefaultAsync();
-                    //_dataContext.Dispose();
                     if (exitUser != null)
                     {
                         return iConstance.RESULT_NODATA;
