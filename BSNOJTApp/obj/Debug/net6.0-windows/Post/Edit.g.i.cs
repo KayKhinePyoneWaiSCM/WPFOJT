@@ -54,7 +54,7 @@ namespace BSNOJTApp.Post {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;V1.0.0.0;component/post/edit.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;component/post/edit.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Post\Edit.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

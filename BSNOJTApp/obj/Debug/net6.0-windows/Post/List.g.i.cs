@@ -62,7 +62,7 @@ namespace BSNOJTApp.Post {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;V1.0.0.0;component/post/list.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;component/post/list.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Post\List.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

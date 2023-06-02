@@ -78,18 +78,18 @@ namespace DataAccess.Repositories
                     }
                     else
                     {
-                         Post post = new()
-                    {
-                        Title = obj.Title,
-                        Description = obj.Description,
-                        IsPublished = obj.IsPublished,
-                        IsDeleted = false,
-                        CreatedDate = DateTime.Now,
-                        CreatedUserId = obj.CreatedUserId
-                    };
-                    _context.Posts.Add(post);
-                    _context.SaveChanges();
-                    return iConstance.RESULT_SUCCESS;
+                        Post post = new()
+                        {
+                            Title = obj.Title,
+                            Description = obj.Description,
+                            IsPublished = obj.IsPublished,
+                            IsDeleted = false,
+                            CreatedDate = DateTime.Now,
+                            CreatedUserId = obj.CreatedUserId
+                        };
+                        _context.Posts.Add(post);
+                        _context.SaveChanges();
+                        return iConstance.RESULT_SUCCESS;
                     }
                 }
             }

@@ -260,7 +260,7 @@ namespace BSNOJTApp.User
                 validate = false;
                 iMessage.ShowWarning(iMessage.MT_0230, iMessage.WMSG_TRAN_U_2230);
             }
-            else if(!IsPasswordValid(User.NewPassword))
+            else if (!IsPasswordValid(User.NewPassword))
             {
                 validate = false;
                 iMessage.ShowWarning("Password format is incorrect", "Password must have at least 8 characters and contain one uppercase letter, one lowercase letter, one digit...");
@@ -392,7 +392,7 @@ namespace BSNOJTApp.User
                     if (result == iConstance.APIRESULT_SUCCESS)
                     {
                         iMessage.ShowInfomation(iMessage.MT_0130, iMessage.IMSG_TRAN_0060);
-                        
+
                         validatePage();
                     }
                     else if (result == iConstance.APIRESULT_NONEDATA)
@@ -435,16 +435,7 @@ namespace BSNOJTApp.User
                     if (result == iConstance.APIRESULT_SUCCESS)
                     {
                         iMessage.ShowInfomation(iMessage.MT_0150, iMessage.IMSG_TRAN_0070);
-                        if (User.Id == iAppSettings.LoginUser.Id)
-                        {
-                            Window? currentWindow = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
-                            var imageSrc = currentWindow.FindName("profileSrc") as ImageBrush;
-                            var txtBox = currentWindow.FindName("txtUserName") as TextBlock;
-                            txtBox.Text = User.FirstName + " " + User.LastName;
-                            string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Image", data.Photo);
-                            BitmapImage image = new BitmapImage(new Uri(destinationPath));
-                            imageSrc.ImageSource = image;
-                        }
+                        bindProfile(data.Photo);
                         validatePage();
                     }
                     else if (result == iConstance.APIRESULT_NONEDATA)
@@ -457,6 +448,19 @@ namespace BSNOJTApp.User
                     }
                     DeleteImage("edit");
                 }
+            }
+        }
+        public void bindProfile(string photo)
+        {
+            if (User.Id == iAppSettings.LoginUser.Id)
+            {
+                Window? currentWindow = Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive);
+                var imageSrc = currentWindow.FindName("profileSrc") as ImageBrush;
+                var txtBox = currentWindow.FindName("txtUserName") as TextBlock;
+                txtBox.Text = User.FirstName + " " + User.LastName;
+                string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Image", photo);
+                BitmapImage image = new BitmapImage(new Uri(destinationPath));
+                imageSrc.ImageSource = image;
             }
         }
         public void CopyImage()
@@ -477,7 +481,7 @@ namespace BSNOJTApp.User
                 {
                     filePath = Path.Combine("Photo");
                 }
-                else if(name == "update")
+                else if (name == "update")
                 {
                     filePath = Path.Combine("Image");
                 }
@@ -485,7 +489,6 @@ namespace BSNOJTApp.User
                 {
                     filePath = Path.Combine("Photos");
                 }
-
                 string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
                 string test = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath, Photo);
                 string[] imageExtensions = new string[] { ".jpg", ".jpeg", ".png", ".gif" };
@@ -494,27 +497,26 @@ namespace BSNOJTApp.User
                                                .ToArray();
                 foreach (string imageFile in imageFiles)
                 {
-                    
-                        if (imageFile != test && IsFileInUse(imageFile) != true)
-                        {
-                            File.Delete(imageFile);
-                        }
+
+                    if (imageFile != test && IsFileInUse(imageFile) != true)
+                    {
+                        File.Delete(imageFile);
+                    }
                 }
             }
         }
-
         bool IsFileInUse(string filePath)
         {
             try
             {
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
                 {
-                   return false;
+                    return false;
                 }
             }
             catch (IOException)
             {
-                 return true;
+                return true;
             }
         }
         private bool IsPasswordValid(string password)

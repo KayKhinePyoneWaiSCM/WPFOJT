@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-
 namespace BSNOJTApp.User
 {
     /// <summary>

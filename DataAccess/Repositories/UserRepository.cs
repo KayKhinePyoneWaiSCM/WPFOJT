@@ -49,7 +49,7 @@ namespace DataAccess.Repositories
             }
         }
 
-        public async Task<List<Model.User>?> GetUserList(string searchString,int id)
+        public async Task<List<Model.User>?> GetUserList(string searchString, int id)
         {
             try
             {
@@ -96,7 +96,7 @@ namespace DataAccess.Repositories
                 return new List<Model.User>();
             }
         }
-        public List<Model.Role>?  GetRoleList()
+        public List<Model.Role>? GetRoleList()
         {
             try
             {
@@ -160,7 +160,7 @@ namespace DataAccess.Repositories
             {
                 using (var _context = new BSNOJTContext())
                 {
-                    var exitUser = await _context.Users.Where(x => x.Email == obj.Email && x.Id != obj.Id ).FirstOrDefaultAsync();
+                    var exitUser = await _context.Users.Where(x => x.Email == obj.Email && x.Id != obj.Id).FirstOrDefaultAsync();
                     _dataContext.Dispose();
                     if (exitUser != null)
                     {
@@ -282,7 +282,7 @@ namespace DataAccess.Repositories
                 return iConstance.RESULT_FAILURE;
             }
         }
-       private User CopyClassMember(Model.User obj)
+        private User CopyClassMember(Model.User obj)
         {
             User user = new();
             user.FirstName = obj.FirstName;

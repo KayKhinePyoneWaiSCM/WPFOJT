@@ -46,7 +46,7 @@ namespace BSNOJTApp.ViewModels
             {
                 return _instance;
             }
-            
+
         }
         /// <summary>
         /// Define pagepath

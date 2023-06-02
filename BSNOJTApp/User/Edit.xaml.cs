@@ -35,26 +35,26 @@ namespace BSNOJTApp.User
         public UserModel User { get; set; }
         private void ChooseImageButton_Click(object sender, RoutedEventArgs e)
         {
-                var openFileDialog = new OpenFileDialog();
-                if (openFileDialog.ShowDialog() == true)
+            var openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string extension = Path.GetExtension(openFileDialog.FileName);
+                if (extension == ".jpg" || extension == ".png" || extension == ".jpeg")
                 {
-                    string extension = Path.GetExtension(openFileDialog.FileName);
-                    if (extension == ".jpg" || extension == ".png" || extension == ".jpeg")
+                    if (openFileDialog != null)
                     {
-                        if (openFileDialog != null)
-                        {
-                            string fileName = Guid.NewGuid().ToString() + Path.GetFileName(openFileDialog.FileName);
-                            string filePath = Path.Combine("Photos", fileName);
-                            string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
-                            var ImageCopy = openFileDialog.FileName;
-                            vm.ImageCopyPath = ImageCopy;
-                            File.Copy(openFileDialog.FileName, destinationPath, true);
-                            BitmapImage image = new BitmapImage(new Uri(destinationPath));
-                            ShowProfileImage.Source = image;
-                            vm.Photo = fileName;
-                        }
+                        string fileName = Guid.NewGuid().ToString() + Path.GetFileName(openFileDialog.FileName);
+                        string filePath = Path.Combine("Photos", fileName);
+                        string destinationPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, filePath);
+                        var ImageCopy = openFileDialog.FileName;
+                        vm.ImageCopyPath = ImageCopy;
+                        File.Copy(openFileDialog.FileName, destinationPath, true);
+                        BitmapImage image = new BitmapImage(new Uri(destinationPath));
+                        ShowProfileImage.Source = image;
+                        vm.Photo = fileName;
                     }
                 }
+            }
         }
     }
 }
