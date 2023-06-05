@@ -16,7 +16,7 @@
     <ictrl:iWindow.Resources>
         <ictrl:iViewConverter x:Key="nullConverter"/>
     </ictrl:iWindow.Resources>
-    <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+    <Border Background="#eff2f7" CornerRadius="30">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250"></ColumnDefinition>

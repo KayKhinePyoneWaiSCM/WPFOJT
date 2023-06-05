@@ -174,8 +174,4 @@
     </Resource>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Photos\" />
-  </ItemGroup>
-
 </Project>

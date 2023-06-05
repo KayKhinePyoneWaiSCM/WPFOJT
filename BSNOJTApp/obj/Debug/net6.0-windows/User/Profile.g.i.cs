@@ -62,7 +62,7 @@ namespace BSNOJTApp.User {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;V1.0.0.0;component/user/profile.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BSNOJTApp;component/user/profile.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\User\Profile.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
