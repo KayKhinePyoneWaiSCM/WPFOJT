@@ -96,7 +96,7 @@
                             HorizontalAlignment="Right"
                             Margin="0,0,20,15"/>
         </Grid>
-        <ictrl:iDataGrid x:Name="postDataGrid" ItemsSource="{Binding Path=PostList}" Grid.Row="1" RowHeight="35" BorderBrush="#FF0B0C0C">
+        <ictrl:iDataGrid x:Name="postDataGrid" ItemsSource="{Binding Path=PostList}" Grid.Row="1" CanUserSortColumns="True" RowHeight="35" BorderBrush="#FF0B0C0C">
             <ictrl:iDataGrid.ColumnHeaderStyle>
                 <Style/>
             </ictrl:iDataGrid.ColumnHeaderStyle>

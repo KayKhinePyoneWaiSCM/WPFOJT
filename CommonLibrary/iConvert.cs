@@ -1,5 +1,4 @@
-﻿
-namespace BSNOJT.CommonLibrary
+﻿namespace BSNOJT.CommonLibrary
 {
     public class iConvert
     {

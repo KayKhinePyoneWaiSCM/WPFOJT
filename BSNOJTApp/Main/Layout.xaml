@@ -8,11 +8,14 @@
         xmlns:ictrl="clr-namespace:BSNOJT.Front.AppControls;assembly=AppControls" 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:viewmodels="clr-namespace:BSNOJTApp.Main" 
-        IsDisplayClosingMessage="False"
+               IsDisplayClosingMessage="False"
         WindowState="Maximized"
         mc:Ignorable="d"
         Background="White"
         Title="Layout" Height="600" Width="800">
+    <ictrl:iWindow.Resources>
+        <ictrl:iViewConverter x:Key="nullConverter"/>
+    </ictrl:iWindow.Resources>
     <Border Background="#eff2f7" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -104,7 +107,7 @@
                     <Separator  Background="#577a6f" DockPanel.Dock="Top"></Separator>
                 </DockPanel>
             </Border>
-            <Frame x:Name="menuLayout" Grid.Column="2" Source="{Binding Path=PagePath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="menuLayout" Grid.Column="2" Source="{Binding Path=PagePath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged,Converter={StaticResource nullConverter}}" Grid.Row="1" NavigationUIVisibility="Hidden"/>
         </Grid>
     </Border>
 </ictrl:iWindow>

@@ -60,32 +60,7 @@ namespace BSNOJTApp.Main
         {
             ExecuteLogout();
         }
-        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
-        }
-        private bool IsMaximized = false;
-        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ClickCount == 2)
-            {
-                if (IsMaximized)
-                {
-                    this.WindowState = WindowState.Normal;
-                    this.Width = 1080;
-                    this.Height = 720;
-                    IsMaximized = false;
-                }
-                else
-                {
-                    this.Close();
-                    IsMaximized = true;
-                }
-            }
-        }
+        
         private void ExecuteLogout()
         {
             MessageBoxResult result = iMessage.ShowQuestion(iMessage.MT_0240, iMessage.QMSG_TRAN_POST_3030, MessageBoxResult.No);
